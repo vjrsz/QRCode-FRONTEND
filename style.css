@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{ width: 100%; height: 100%; }
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: hsl(212, 45%, 89%);
+}
+
+.card-code{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 1px 1px 15px 1px hsl(212, 84%, 76%);
+}
+.card-code:hover{
+    box-shadow: 5px 5px 10px 10px hsl(212, 84%, 76%);
+}
+    .image-main{
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
+    }
+    .image-main img{
+        width: 100%;
+        height: 100%;   
+        border-radius: 15px;
+    }
+    .description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 150px;
+        text-align: center;
+        gap: 15px;
+
+    }
+    .description h1{
+        font-family: 'Outfit', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        color: hsl(218, 44%, 22%);
+    }
+    .description p{
+        font-family: 'Outfit', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: hsl(220, 15%, 55%);
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 768px) {
+    .card-code{
+        width: 300px;
+        height: 450px;
+    }   
+    .image-main{
+        width: 250px;
+        height: 250px;
+    }
+    .description{
+        width: 250px;
+        height: 150px;
+    }
+}
+@media (max-width: 320px) {
+    .card-code{
+        width: 250px;
+        height: 400px;
+    }   
+    .image-main{
+        width: 200px;
+        height: 200px;
+    }
+    .description{
+        width: 200px;
+        height: 150px;
+    }
+    .description h1{
+        font-size: 15px;
+    }
+    .description p{
+        font-size: 12px;
+    }
+}
